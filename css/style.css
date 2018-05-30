@@ -17,7 +17,3 @@
 	height: 900px;
 	width: 1350px;
 }
-
-#carousel ul li img {
-	object-fit: cover;
-}
