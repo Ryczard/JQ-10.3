@@ -4,3 +4,20 @@
 	height: 900px;
 	overflow: hidden;
 }
+
+#carousel ul {
+	margin: 0;
+	padding: 0;
+	width: 6750px;
+}
+
+#carousel ul li {
+	list-style-type: none;
+	float: left;
+	height: 900px;
+	width: 1350px;
+}
+
+#carousel ul li img {
+	object-fit: cover;
+}
