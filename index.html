@@ -4,21 +4,43 @@
 	<meta charset="utf-8">
 	<title>Karuzela</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 	<div id="carousel">
+		<div class="left-scroll">
+			<i class="fas fa-arrow-circle-left" aria-hidden="true"></i>
+		</div>
 		<ul>
-			<li><img src="https://images.unsplash.com/photo-1505728068082-c4e7a2a3a46d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=eec4bf8bd0cde39ebd993ff9d89398dd&auto=format&fit=crop&w=1350&q=80" alt=""></li>
-			<li><img src="https://images.unsplash.com/photo-1497122123454-d63853ca2d39?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0c574ed7dda19e8b7089f3a166eb879b&auto=format&fit=crop&w=1350&q=80" alt=""></li>
-			<li><img src="https://images.unsplash.com/photo-1516628998528-41d3190807c2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d0ee9b65debf8ea85aaa34caa544f64e&auto=format&fit=crop&w=1350&q=80" alt=""></li>
-			<li><img src="https://images.unsplash.com/photo-1521128910265-6ff140fc4828?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c06ad70c519987718cea5005c2e49906&auto=format&fit=crop&w=1351&q=80" alt=""></li>
-			<li><img src="https://images.unsplash.com/photo-1516469635987-fcdf02d6017c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a6829a335e2308683c8baead1611406f&auto=format&fit=crop&w=1350&q=80" alt=""></li>
+			<li data-slide="1">
+				<img src="https://images.unsplash.com/photo-1505728068082-c4e7a2a3a46d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=eec4bf8bd0cde39ebd993ff9d89398dd&auto=format&fit=crop&w=1350&q=80" alt="">
+			</li>
+			<li data-slide="2">
+				<img src="https://images.unsplash.com/photo-1497122123454-d63853ca2d39?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0c574ed7dda19e8b7089f3a166eb879b&auto=format&fit=crop&w=1350&q=80" alt="">
+			</li>
+			<li data-slide="3">
+				<img src="https://images.unsplash.com/photo-1516628998528-41d3190807c2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d0ee9b65debf8ea85aaa34caa544f64e&auto=format&fit=crop&w=1350&q=80" alt="">
+			</li>
+			<li data-slide="4">
+				<img src="https://images.unsplash.com/photo-1521128910265-6ff140fc4828?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c06ad70c519987718cea5005c2e49906&auto=format&fit=crop&w=1351&q=80" alt="">
+			</li>
+			<li data-slide="5">
+				<img src="https://images.unsplash.com/photo-1516469635987-fcdf02d6017c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a6829a335e2308683c8baead1611406f&auto=format&fit=crop&w=1350&q=80" alt="">
+			</li>
 		</ul>	
+		<div class="right-scroll">
+			<i class="fas fa-arrow-circle-right" aria-hidden="true"></i>
+		</div>   
 	</div>
 	<div id="carousel-control">
-		<button id="left-scroll"><</button> 
-        <button id="right-scroll">></button>
+		<ul class="dots">
+			<li><div class="dot active" data-slide="1"></div></li>
+			<li><div class="dot" data-slide="2"></div></li>
+			<li><div class="dot" data-slide="3"></div></li>
+			<li><div class="dot" data-slide="4"></div></li>
+			<li><div class="dot" data-slide="5"></div></li>
+		</ul>
 	</div>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
